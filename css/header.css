@@ -1,0 +1,259 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: cover;
+}
+
+header {
+    margin: 0;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+
+}
+
+.main-nav {
+    display: flex;
+    padding-bottom: 10px;
+    padding-left: 900px;
+}
+
+nav div {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+}
+
+nav div img {
+    padding-left: 20px;
+    width: 15rem;
+    height: 6rem;
+}
+
+div input {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    font-size: 2em;
+    border: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 840px;
+    width: 100000px;
+    height: 80px;
+    background-color: #eeeeee;
+    border-radius: 50px;
+    padding: 0 8px;
+}
+
+.search-bar input {
+    border: none;
+    border-radius: 24px;
+    background-color: transparent;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.search-bar svg {
+    width: 20px;
+    height: 20px;
+    fill: #000000;
+}
+
+.nav-links a {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1.72em;
+    font-weight: bold;
+}
+
+.nav-links svg {
+    fill: white;
+    width: 2em;
+    height: 2em;
+}
+
+.countdown-container {
+    font-size: 4em;
+    font-weight: bold;
+    background-color: white;
+    text-align: center;
+}
+
+.catagoriy {
+    display: inline-flex;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.catagoriy h3 {
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.catagoriy select {
+    margin-top: 0.5rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 10px;
+    height: 3rem;
+    width: 7rem;
+    background-color: white;
+}
+
+.catagoriy-select {
+    margin-left: 1rem;
+}
+
+.currency-select {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 2rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+    transition: all 0.3s ease;
+    text-decoration: underline;
+}
+
+.cart-status {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    padding: 16px;
+    min-width: 360px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.cart-status.active {
+    display: block;
+}
+
+.cart-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: #f5f5f5;
+    border-radius: 2px;
+}
+
+.cart-item-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.cart-item-controls button {
+    border: 1px solid #ff4747;
+    background: #fff;
+    color: #ff4747;
+    padding: 4px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.cart-item-controls button:hover {
+    background: #fff0f0;
+}
+
+.cart-notification {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: #ff4747;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(10px); }
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+#cart-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #ff4747;
+    color: white;
+    border-radius: 10px;
+    padding: 1px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    min-width: 18px;
+    text-align: center;
+}

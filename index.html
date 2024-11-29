@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Store</title>
+    <link rel="stylesheet" href="css/stayles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/slider.css">
+
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+             <a href="index.html"><img src="img/Untitled design.png" width="200px" height="70px" style="padding-right: 40px;"> </a>
+              
+            <div class="search-bar" style="width:100000px; padding-bottom: 10px; ">
+                <input type="text" placeholder="Search..." style="border: none;"><svg style="width: 40px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+
+            </div>
+            <div class="nav-links">
+                <a href="sign_in.html"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg></a>
+                <a href="#" class="cart" id="cart-toggle">
+                    <span class="cart-icon"><svg width="20" height="20" style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg></span>
+                    <span id="cart-count">0</span>
+                    <div class="cart-status" id="cart-status"></div>
+                </a>
+            </div>
+        </nav>
+        <div class="countdown-container">
+            <span>Black Friday Starts In:</span>
+            <div id="countdown"></div>
+        </div>
+        <div class="catagoriy">
+            <h3>currency: </h3>
+            <select class="currency-select" name="currency" id="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="ETB">ETB</option>
+                
+                
+            </select>
+            <select class="currency-select"     name="sort" id="sort">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+           
+        </div>
+    </header>    
+
+    <main>
+        <section class="categories">
+            <h1 style="text-align: center; font-size: 4rem; color: black;">Welcome to Black Friday Deals</h1>
+            <div class="slider-container">
+                <button class="slider-btn prev">&#10094;</button>
+                <div class="slider" style="padding-top: 5px;">
+                    <div class="slide" >
+                        <img style="width: 100%; height: 900px;" src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=800" alt="Electronics">
+                    </div>
+                    <div class="slide">
+                        <img style="width: 100%; height: 900px;" src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?w=800" alt="Black Friday">
+                    </div>
+                    <div class="slide">
+                        <img style="width: 100%; height: 900px;" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800" alt="Fashion">
+                    </div>
+                    <div class="slide">
+                        <img style="width: 100%; height: 900px;" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800" alt="Jewelry">
+                    </div>
+                    <div class="slide">
+                        <img style="width: 100%; height: 900px;" src="https://images.unsplash.com/photo-1558877385-81a1c7e67d72?w=800" alt="Toys">
+                    </div>
+                </div>
+                <button class="slider-btn next">&#10095;</button>
+                <div class="dots-container"></div>
+            </div>
+            </div>
+        </section>
+        <section class="featured-products" >
+            
+                <h2 class="section-title" >Catagory</h2>
+        
+            <div class="banner-grid" style="display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    padding: 20px; width: 100%; align-items: cover" >
+            <a href="electronic.html" class="category-card">
+                <div class="banner-item">
+                    <img src="https://images.unsplash.com/photo-1593344484962-796055d4a3a4?w=800" alt="Electronics">
+                </div>
+                    <div class="banner-content">
+                    <h2>Electronics</h2>
+                    <p>Latest gadgets and devices</p>
+                    </div>
+            </a>
+
+            <a href="womens-clothing.html" class="category-card">
+                <div class="banner-item">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800" alt="Fashion">
+                </div>
+                <div class="banner-content">
+                    <h2>Fashion</h2>
+                    <p>Trendy clothing and accessories</p>
+                </div>
+            </a>
+            <a href="mens-clothing.html" class="category-card">
+                <div class="banner-item">
+                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=800" alt="Men's Fashion">
+                </div>
+                <div class="banner-content">
+                    <h2>Men's Fashion</h2>
+                    <p>Stylish menswear and accessories</p>
+                </div>
+            </a>
+
+            <a href="jewelery.html" class="category-card">
+                    <div class="banner-item">
+                    <img src="https://images.unsplash.com/photo-1601821765780-754fa98637c1?w=800" alt="Jewelry">
+                </div>
+                <div class="banner-content">
+                    <h2>Jewelry</h2>
+                    <p>Elegant jewelry collection</p>
+                </div>
+            </a>
+
+            <a href="toy's.html" class="category-card">
+                <div class="banner-item">
+                    <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800" alt="Toys">
+                </div>
+                <div class="banner-content">
+                    <h2>Toys</h2>
+                    <p>Fun toys for all ages</p>
+                </div>
+            </a>
+            
+        </section>
+        <section class="featured-products">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="banner-grid">
+                <div class="product-card" data-product-id="123">
+                    <div class="deal-badge">Deal</div>
+                    <a href="#" onclick="showProductDetails('Ultra Slim Laptop Pro', 'Latest generation laptop with powerful specs and sleek design', 299.99, 'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800', '★★★★★', '2,341')">
+                        <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800" alt="Premium Laptop">
+                    </a>
+                    <div class="product-info">
+                        <h3>Ultra Slim Laptop Pro</h3>
+                        <div class="rating">★★★★★ <span>(2,341)</span></div>
+                        <div class="price" data-usd-price="299.99">
+                            <span class="currency">ETB</span>
+                            <span class="amount">160</span>
+                            <span class="cents">74</span>
+                        </div>
+                        <div class="prime-badge">Prime</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="deal-badge">20% Off</div>
+                    <a href="#" onclick="showProductDetails('Classic Fit Men\'s Suit', 'Premium quality suit perfect for formal occasions', 299.99, 'https://images.unsplash.com/photo-1617137968427-85924c800a22?w=800', '★★★★☆', '856')">
+                        <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?w=800" alt="Men's Suit">
+                    </a>
+                    <div class="product-info">
+                        <h3>Classic Fit Men's Suit</h3>
+                        <div class="rating">★★★★☆ <span>(856)</span></div>
+                        <div class="price" data-usd-price="299.99">
+                            <span class="currency">$</span>
+                            <span class="amount">299</span>
+                            <span class="cents">99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="deal-badge">20% Off</div>
+                    <a href="#" onclick="showProductDetails('Classic Fit Men\'s Suit', 'Elegant suit for the modern gentleman', 299.99, 'https://m.media-amazon.com/images/I/61W965dTU4L._AC_UL320_.jpg', '★★★★☆', '856')">
+                        <img src="https://m.media-amazon.com/images/I/61W965dTU4L._AC_UL320_.jpg" alt="Men's Suit">
+                    </a>
+                    <div class="product-info">
+                        <h3>Classic Fit Men's Suit</h3>
+                        <div class="rating">★★★★☆ <span>(856)</span></div>
+                        <div class="price" data-usd-price="299.99">
+                            <span class="currency">$</span>
+                            <span class="amount">299</span>
+                            <span class="cents">99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="deal-badge">Premium</div>
+                    <a href="#" onclick="showProductDetails('Diamond Pendant Necklace', 'Exquisite diamond pendant with 18K gold chain', 999.99, 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800', '★★★★★', '432')">
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800" alt="Diamond Necklace">
+                    </a>
+                    <div class="product-info">
+                        <h3>Diamond Pendant Necklace</h3>
+                        <div class="rating">★★★★★ <span>(432)</span></div>
+                        <div class="price" data-usd-price="999.99">
+                            <span class="currency">$</span>
+                            <span class="amount">999</span>
+                            <span class="cents">99</span>
+                        </div>
+                        <div class="prime-badge">Prime</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="deal-badge">New</div>
+                    <a href="#" onclick="showProductDetails('Premium Smart Watch', 'Advanced smartwatch with health monitoring features', 249.99, 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800', '★★★★☆', '1,123')">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800" alt="Smart Watch">
+                    </a>
+                    <div class="product-info">
+                        <h3>Premium Smart Watch</h3>
+                        <div class="rating">★★★★☆ <span>(1,123)</span></div>
+                        <div class="price" data-usd-price="249.99">
+                            <span class="currency">$</span>
+                            <span class="amount">249</span>
+                            <span class="cents">99</span>
+                        </div>
+                        <div class="prime-badge">Prime</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="deal-badge">Save 30%</div>
+                    <a href="#" onclick="showProductDetails('Premium Wireless Headphones', 'High-quality noise cancelling headphones', 199.99, 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800', '★★★★★', '3,442')">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800" alt="Wireless Headphones">
+                    </a>
+                    <div class="product-info">
+                        <h3>Premium Wireless Headphones</h3>
+                        <div class="rating">★★★★★ <span>(3,442)</span></div>
+                        <div class="price" data-usd-price="199.99">
+                            <span class="currency">$</span>
+                            <span class="amount">199</span>
+                            <span class="cents">99</span>
+                        </div>
+                        <div class="prime-badge">Prime</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="deal-badge">Hot Deal</div>
+                    <a href="#" onclick="showProductDetails('Premium Sport Sneakers', 'Comfortable and stylish athletic shoes', 129.99, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800', '★★★★☆', '2,156')">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800" alt="Sport Sneakers">
+                    </a>
+                    <div class="product-info">
+                        <h3>Premium Sport Sneakers</h3>
+                        <div class="rating">★★★★☆ <span>(2,156)</span></div>
+                        <div class="price" data-usd-price="129.99">
+                            <span class="currency">$</span>
+                            <span class="amount">129</span>
+                            <span class="cents">99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="deal-badge">Best Seller</div>
+                    <a href="#" onclick="showProductDetails('Latest Smartphone Pro Max', 'Cutting-edge smartphone with advanced camera system', 999.99, 'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800', '★★★★★', '5,678')">
+                        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=800" alt="Smartphone">
+                    </a>
+                    <div class="product-info">
+                        <h3>Latest Smartphone Pro Max</h3>
+                        <div class="rating">★★★★★ <span>(5,678)</span></div>
+                        <div class="price" data-usd-price="999.99">
+                            <span class="currency">$</span>
+                            <span class="amount">999</span>
+                            <span class="cents">99</span>
+                        </div>
+                        <div class="prime-badge">Prime</div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+       
+    </main>
+    <footer class="footer" >
+        <a style="text-decoration: none; color: white;" href="about.html">About</a>
+        <a style="text-decoration: none; color: white;" href="contact.html">Contact</a>
+        <a style="text-decoration: none; color: white;" href="privacy.html">Privacy</a>
+        <a style="text-decoration: none; color: white;" href="terms.html">Terms</a>
+    </footer>
+        <p> 2024 Black Friday Deals</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/currency.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>

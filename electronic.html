@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics - Store</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/stayles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+             <a href="index.html"><img src="img/Untitled design.png" width="200px" height="70px" style="padding-right: 40px;"> </a>
+              
+            <div class="search-bar" style="width:100000px; padding-bottom: 10px; ">
+                <input type="text" placeholder="Search..." style="border: none;"><svg style="width: 40px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+
+            </div>
+            <div class="nav-links">
+                <a href="sign_in.html"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"/></svg></a>
+                <a href="#" class="cart" id="cart-toggle">
+                    <span class="cart-icon"><svg width="20" height="20" style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg></span>
+                    <span id="cart-count">0</span>
+                    <div class="cart-status" id="cart-status"></div>
+                </a>
+            </div>
+        </nav>
+        <div class="countdown-container">
+            <span>Black Friday Starts In:</span>
+            <div id="countdown"></div>
+        </div>
+        <div class="catagoriy">
+            <h3>currency: </h3>
+            <select class="currency-select" name="currency" id="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="ETB">ETB</option>
+                
+                
+            </select>
+            <select class="currency-select"     name="sort" id="sort">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+           
+        </div>
+    </header>  
+
+    <main class="category-main">
+        <h1 class="category-title">Electronics</h1>
+        <div class="banner-grid">
+            <div class="product-card">
+                <div class="deal-badge">LEMFO</div>
+                <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5df9f815be664d7ea65bea210c5de0017.jpg_80x80.jpg_.webp" alt="Premium Laptop">
+                <div class="product-info">
+                    <h3>LEMFO LT10 Smart Watch 2024 Android Gift Bluetooth Call Smartwatch 2024 Touch Dial Music Fitness Tracker Sports Watches</h3>
+                    <div class="rating">★★★★★ <span>(1,781)</span></div>
+                    <div class="price" data-usd-price="160.74">
+                        <span class="currency">ETB</span>
+                        <span class="amount">160</span>
+                        <span class="cents">74</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="deal-badge">FireBat</div>
+                <img src="https://ae-pic-a1.aliexpress-media.com/kf/S200084e14018492ba7943b21bf157bf2Q.jpg_80x80.jpg_.webp" alt="Premium Laptop">
+                <div class="product-info">
+                    <h3>New Game Laptop 15.6-inch HD Screen Intel Celeron N5095 Windows 11 System Dual Band WiFi 16GB RAM 1TB SSD Business Office Laptop</h3>
+                    <div class="rating">★★★★★ <span>(2,861)</span></div>
+                    <div class="price" data-usd-price="299.99">
+                        <span class="currency">ETB</span>
+                        <span class="amount">45,505</span>
+                        <span class="cents">19</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="deal-badge">Logitech</div>
+                <img src="https://m.media-amazon.com/images/I/61GjlALH-gL._AC_UL320_.jpg" alt="Premium Laptop">
+                <div class="product-info">
+                    <h3>JBL Quantum 400 - USB over-ear gaming headset with game-chat balance dial, JBL QuantumSURROUND and DTS, Voice focus directional flip-up mic and memory foam ear cushions (Black) </h3>
+                    <div class="rating">★★★★★ <span>(2,341)</span></div>
+                    <div class="price" data-usd-price="299.99">
+                        <span class="currency">$</span>
+                        <span class="amount">299</span>
+                        <span class="cents">99</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="deal-badge">Frigidaire</div>
+                <img src="https://m.media-amazon.com/images/I/71yl7YJUTKL._AC_UL320_.jpg" alt="Premium Laptop">
+                <div class="product-info">
+                    <h3>Frigidaire EFMIS179 Gaming Light Up Mini Beverage Refrigerator, Stealth </h3>
+                    <div class="rating">★★★★☆ <span>(1,455)</span></div>
+                    <div class="price" data-usd-price="38.57">
+                        <span class="currency">$</span>
+                        <span class="amount">38</span>
+                        <span class="cents">57</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="deal-badge">Best seller</div>
+                <img src="https://m.media-amazon.com/images/I/51VpABY-b6L._AC_UL320_.jpg" alt="Premium Laptop">
+                <div class="product-info">
+                    <h3>Logitech G305 LIGHTSPEED Wireless Gaming Mouse, Hero 12K Sensor, 12,000 DPI, Lightweight, 6 Programmable Buttons, 250h Battery Life, On-Board Memory, PC/Mac - Black</h3>
+                    <div class="rating">★★★★☆ <span>(29,341)</span></div>
+                    <div class="price" data-usd-price="19.99">
+                        <span class="currency">$</span>
+                        <span class="amount">19</span>
+                        <span class="cents">99</span>
+                    </div>
+                    <div class="prime-badge">Prime</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="deal-badge">Amazon Basics</div>
+                <img src="https://m.media-amazon.com/images/I/61R8OgObRsL._AC_UL320_.jpg" alt="Premium Laptop">
+                <div class="product-info">
+                    <h3>Amazon Basics USB Condenser Microphone for Streaming, Recording, and Podcasting on PC, Plug and Play, Cardioid Pickup, Adjustable Stand with 360° Rotation, 5.8 x 3.4 inches, Black </h3>
+                    <div class="rating">★★★★☆ <span>(66)</span></div>
+                    <div class="price" data-usd-price="67.65">
+                        <span class="currency">$</span>
+                        <span class="amount">67</span>
+                        <span class="cents">65</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="deal-badge">Deal</div>
+                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800" alt="Premium Laptop">
+                <div class="product-info">
+                    <h3>Ultra Slim Laptop Pro</h3>
+                    <div class="rating">★★★★★ <span>(2,341)</span></div>
+                    <div class="price" data-usd-price="299.99">
+                        <span class="currency">$</span>
+                        <span class="amount">299</span>
+                        <span class="cents">99</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="deal-badge">Syntech</div>
+                <img src="https://m.media-amazon.com/images/I/61teHXr3vDL._AC_UY218_.jpg" alt="Premium Laptop">
+                <div class="product-info">
+                    <h3>Bioherm Charging Dock for Oculus Quest 2, Magnetic Charging Station for Meta Quest 2 VR Headset & Controllers, with 2 Rechargeable 2100mAh Batteries, USB-C Charger and Cable, Supports LED Indicator </h3>
+                    <div class="rating">★★★★☆ <span>(541)</span></div>
+                    <div class="price" data-usd-price="599.99">
+                        <span class="currency">$</span>
+                        <span class="amount">599</span>
+                        <span class="cents">99</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </main>
+
+    <footer class="footer" >
+        <a style="text-decoration: none; color: white;" href="about.html">About</a>
+        <a style="text-decoration: none; color: white;" href="contact.html">Contact</a>
+        <a style="text-decoration: none; color: white;" href="privacy.html">Privacy</a>
+        <a style="text-decoration: none; color: white;" href="terms.html">Terms</a>
+    </footer>
+        <p> 2024 Black Friday Deals</p>
+    </footer>
+    <script src="js/catagoriy.js"></script>
+    <script src="js/currency.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
